@@ -546,12 +546,12 @@
                 
                 <!-- Project 6 -->
                 <div class="project-card relative overflow-hidden rounded-xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1603239564387-c5b5ea6f635e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb258ZW58MHx8fGJsdWV8MTc1NDM4NDQyNHww&ixlib=rb-4.1.0&q=85" 
-                         alt="Infrastructure urbaine" class="w-full h-64 object-cover">
+                    <img src="assets/agri.jpg" 
+                         alt="Exploitation agricole" class="w-full h-64 object-cover">
                     <div class="project-overlay absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white p-6">
-                            <h3 class="text-xl font-bold mb-2">Infrastructure Urbaine</h3>
-                            <p class="mb-4">Développement d'infrastructures urbaines robustes pour une croissance urbaine durable.</p>
+                            <h3 class="text-xl font-bold mb-2">Exploitation agricole</h3>
+                            <p class="mb-4">La récolte, effectuée à maturité optimale, couronne ce processus rigoureux. C'est ce savoir-faire de la terre qui garantit la valeur de chaque culture..</p>
                             <button onclick="openModal('modal6')" class="btn-primary px-6 py-2 rounded-full">Voir Détails</button>
                         </div>
                     </div>
@@ -712,66 +712,62 @@
                 
                 <!-- Contact Form -->
                 <div class="animate-slide-up">
-                    <form id="contact-form" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="nom" class="block text-gray-700 font-semibold mb-2">Nom *</label>
-                                <input type="text" id="nom" name="nom" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300">
-                            </div>
-                            <div>
-                                <label for="prenom" class="block text-gray-700 font-semibold mb-2">Prénom *</label>
-                                <input type="text" id="prenom" name="prenom" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300">
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="telephone" class="block text-gray-700 font-semibold mb-2">Téléphone *</label>
-                                <input type="tel" id="telephone" name="telephone" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email *</label>
-                                <input type="email" id="email" name="email" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300">
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="service" class="block text-gray-700 font-semibold mb-2">Service souhaité</label>
-                            <select id="service" name="service" 
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300">
-                                <option value="">Sélectionnez un service</option>
-                                <option value="btp">Bâtiments & Travaux Publics</option>
-                                <option value="assainissement">Assainissement</option>
-                                <option value="immobilier">Immobilier</option>
-                                <option value="quincaillerie">Quincaillerie</option>
-                                <option value="agriculture">Agriculture</option>
-                                <option value="peche-elevage">Pêche & Élevage</option>
-                                <option value="genie-informatique">Génie Informatique</option>
-                                <option value="genie-electromecanique">Génie Électromécanique</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message *</label>
-                            <textarea id="message" name="message" rows="5" required 
-                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-300"
-                                      placeholder="Décrivez votre projet ou vos besoins..."></textarea>
-                        </div>
-                        
-                        <button type="submit" id="submit-btn" 
-                                class="btn-primary text-gray-800 px-8 py-4 rounded-lg font-semibold w-full transition-all duration-300">
-                            <span id="submit-text">Envoyer le Message</span>
-                            <div id="loading-spinner" class="loading-spinner mx-auto hidden"></div>
-                        </button>
-                        
-                        <div id="form-message" class="hidden p-4 rounded-lg text-center font-semibold"></div>
-                    </form>
+                    <form id="contact-form" class="space-y-6" action="https://formspree.io/f/mblkelze" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nom" class="block text-gray-800 font-medium mb-2">Nom</label>
+                        <input type="text" id="nom" name="nom" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                    <label for="prenom" class="block text-gray-800 font-medium mb-2">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="email" class="block text-gray-800 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                <div>
+                <label for="telephone" class="block text-gray-800 font-medium mb-2">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                 </div>
             </div>
+            <div>
+                <label for="service" class="block text-gray-800 font-medium mb-2">Service souhaité</label>
+                <select id="service" name="service" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Sélectionnez un service</option>
+                    <option value="BTP">Bâtiments & Travaux Publics</option>
+                    <option value="Assainissement">Assainissement</option>
+                    <option value="Immobilier">Immobilier</option>
+                    <option value="Quincaillerie">Quincaillerie</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Peche">Pêche & Élevage</option>
+                    <option value="Informatique">Génie Informatique</option>
+                    <option value="Electromecanique">Génie Électromécanique</option>
+                </select>
+            </div>
+            <div>
+            <label for="message" class="block text-gray-800 font-medium mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+            <div class="text-center">
+            <button type="submit" id="submit-btn"
+                class="btn-primary inline-flex items-center justify-center px-6 py-3 rounded-full text-gray-800 font-semibold transition-all duration-300">
+                <span id="submit-text">Envoyer le message</span>
+                <div id="loading-spinner" class="loading-spinner ml-3 hidden"></div>
+            </button>
+        </div>
+        <div id="form-message" class="hidden"></div>
+        </form>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -1117,16 +1113,16 @@
         </div>
     </div>
 
-    <!-- Modal 6: Infrastructure Urbaine -->
+    <!-- Modal 6: Exploitation Agricole -->
     <div id="modal6" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="text-2xl font-bold">Infrastructure Urbaine</h2>
+                <h2 class="text-2xl font-bold">Exploitation agricole</h2>
                 <span class="close" onclick="closeModal('modal6')">&times;</span>
             </div>
             <div class="modal-body">
-                <img src="https://images.unsplash.com/photo-1603239564387-c5b5ea6f635e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb258ZW58MHx8fGJsdWV8MTc1NDM4NDQyNHww&ixlib=rb-4.1.0&q=85" 
-                     alt="Infrastructure Urbaine" 
+                <img src="assets/agri2.jpg" 
+                     alt="Exploitation agricole" 
                      class="project-detail-img">
                 
                 <div class="project-specs">
@@ -1135,11 +1131,11 @@
                         <div class="spec-label">Longueur</div>
                     </div>
                     <div class="spec-item">
-                        <div class="spec-value">Routes</div>
+                        <div class="spec-value">Champ</div>
                         <div class="spec-label">Type</div>
                     </div>
                     <div class="spec-item">
-                        <div class="spec-value">12 mois</div>
+                        <div class="spec-value">2 mois</div>
                         <div class="spec-label">Durée</div>
                     </div>
                     <div class="spec-item">
@@ -1150,9 +1146,9 @@
                 
                 <h3 class="text-xl font-bold mb-3">Description du Projet</h3>
                 <p class="text-gray-800 mb-4">
-                    Développement d'infrastructures routières urbaines sur 5 kilomètres incluant la construction 
-                    de nouvelles voies, l'installation d'éclairage public et la mise en place de systèmes de drainage 
-                    modernes pour améliorer la mobilité urbaine à Lubumbashi.
+                    Dans l'artisanat agricole, un travail bien fait est la signature de la qualité. Du labour précis 
+                    qui prépare le terrain, au semis 
+                    méticuleux et au suivi agronomique constant, chaque geste est un investissement.
                 </p>
                 <p class="text-gray-800 mb-4">
                     Ce projet d'envergure comprend également l'aménagement d'espaces piétonniers sécurisés, 
